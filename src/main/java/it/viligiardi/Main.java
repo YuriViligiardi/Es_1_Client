@@ -27,6 +27,7 @@ public class Main {
             String stringaRicevuta = in.readLine();
             System.out.println("La stringa ricevuta: " + stringaRicevuta);
 
+            mySocket.close();
         } catch (Exception e) {
 
             System.out.println(e.getMessage());
