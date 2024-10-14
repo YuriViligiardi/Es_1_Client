@@ -14,13 +14,12 @@ public class Main {
             System.out.println("Il client è partito");
 
             Socket mySocket = new Socket("localhost", 5637); //Creazione Socket del server che andrà in comunicazione con quello del server
-            
             System.out.println("Il client si è collegato");
     
             BufferedReader in = new BufferedReader(new InputStreamReader(mySocket.getInputStream()));
             DataOutputStream out = new DataOutputStream(mySocket.getOutputStream());
 
-            String stringaDaInviare = "ciao mondo";
+            String stringaDaInviare = "ciao sono Yuri";
             out.writeBytes(stringaDaInviare + "\n");
             System.out.println("La stringa inviata: " + stringaDaInviare);
 
